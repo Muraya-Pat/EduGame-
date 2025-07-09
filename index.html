@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGame: All Science, All Around Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>🔬 EduGame</h1>
+        <p class="subtitle">All Science, All Around Me</p>
+    </header>
+
+    <main>
+        <div class="intro-screen">
+            <h2>Can you spot the science in everyday items?</h2>
+            <p>Click on items to select which science field explains them</p>
+            <button id="start-btn">Start Game</button>
+        </div>
+
+        <div class="game-container hidden">
+            <div class="progress-tracker">
+                <span id="progress">0% Complete</span>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+
+            <div class="items-grid">
+                <!-- Items will be inserted here by JavaScript -->
+            </div>
+
+            <div class="feedback-popup hidden">
+                <div class="feedback-content">
+                    <p id="feedback-text"></p>
+                    <button id="continue-btn">Continue</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="completion-screen hidden">
+            <h2>🎉 Great Job! 🎉</h2>
+            <p>You've completed the science challenge!</p>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>EduGame - Discovering science in everyday life</p>
+        <p class="copyright">© 2023 All Rights Reserved</p>
+    </footer>
+
+    <audio id="intro-audio" src="audio/intro.mp3"></audio>
+    <audio id="completion-audio" src="audio/completion.mp3"></audio>
+    <!-- Item audio elements will be added by JavaScript -->
+
+    <script src="script.js"></script>
+</body>
+</html>
