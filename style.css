@@ -68,8 +68,8 @@ main {
 }
 
 button {
-    background-color: var(--primary);
-    color: white;
+    background: linear-gradient(135deg, rgb(206, 69, 183), rgb(152, 218, 238));
+    color: black;
     border: none;
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
@@ -93,7 +93,8 @@ button:hover {
 }
 
 .progress-tracker {
-    background-color: white;
+    /*make the background color  for progress-tracker a fantastic gradient of purple and white */
+    background: linear-gradient(135deg, rgb(206, 69, 183), rgb(152, 218, 238));
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -124,7 +125,7 @@ button:hover {
     background-color: white;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     aspect-ratio: 1/1.2; /* More rectangular shape */
     display: flex;
@@ -151,7 +152,7 @@ button:hover {
 .item-label {
     padding: 1.2rem;
     text-align: center;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 1.1rem;
     color: var(--dark);
     background-color: white;
@@ -175,7 +176,7 @@ button:hover {
     font-weight: 600;
     transition: all 0.2s ease;
     background-color: var(--primary);
-    color: white;
+    color: rgb(10, 10, 10);
 }
 
 .option-btn:hover {
