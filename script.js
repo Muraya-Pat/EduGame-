@@ -207,6 +207,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 updateProgress();
                 createConfetti(itemCard); // Add confetti effect
                 showFeedback(true, currentItem.feedback);
+                // disable option buttons for that card when the choice is correct
+                itemCard.querySelectorAll('.option-btn').forEach(btn => {
+                    btn.disabled = true;
+                    btn.style.cursor = 'not-allowed';
+                });
             } else {
                 showFeedback(false, "Try again. What science explains how this works?");
             }
